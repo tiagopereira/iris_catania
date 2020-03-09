@@ -1,0 +1,12 @@
+Exercises for the IRIS Data Analysis Tutorial
+=============================================
+
+.. toctree::
+   :numbered:
+   :maxdepth: 2
+
+   introduction
+   questions
+   tutorials
+   exercises_operations
+   projects

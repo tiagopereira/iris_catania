@@ -1,0 +1,71 @@
+********
+Projects
+********
+
+Spicules/fibrils on limb and off-limb
+=====================================
+
+This project will have you looking at limb spicules and their disk counterparts. Using an IRIS 400-step raster at one of the solar poles (you can use the 20140708_114109_3824262996 dataset that was distributed), you should produce the following:
+
+- A spectroheliogram (fixed wavelength [x, y] image) of Mg II h at -55 km/s from line centre
+- A spectroheliogram of Si IV 139 nm at -35 km/s from line centre
+- A Dopplergram of Mg II h at +/- 55 km/s
+- Bonus: Plot individual spectra in Mg II h in the fibrils/spicules that appear in the Dopplergrams. Do this for both white and black features, below the limb and above the limb.
+
+With the information above (and also looking at individual spectra), you will be able to answer the following questions:
+
+- Is the target of the observations quiet Sun or a coronal hole? (Hint: look at AIA 19.3 nm.)
+- Comparing the spectroheliograms in Mg II and Si IV, can you see any common features? What can you say about the length of the features?
+- Where do the spicule/fibril bushes come from?
+- Bonus: looking at spectra in red and blue shifted fibrils (appearing as black and white in Dopplergrams), what is the difference between the line profiles above the limb and below the limb?
+
+Some hints/tips:
+
+- Do get accurate spectroheliograms and Dopplergrams, you need to make sure that there is no remaining orbital velocity component or thermal shifts, and possibly correct for that. 
+- When comparing Si IV with Mg II you'll have to make sure that the alignment between the cameras is correct.
+- When looking at individual spectra, it may be useful to compare them with an average spectrum at around the same mu value (or a few y rows in the image)
+
+
+Sunspot waves
+=============
+
+In this project you will look waves in sunspots, and their response in the transition region. You will need to download an IRIS dataset:
+
+http://www.lmsal.com/solarsoft/irisa/data/level2_compressed/2013/09/02/20130902_163935_4000255147/
+
+Download and uncompress the files. They will be about 1 Gb to download. Once you get the data, do the following:
+
+- Explore the data, look at movies of the slit-jaw images. What do you see in the sunspot umbra?
+- Make a plot of the slit-jaw intensities (sum a few pixels in the umbra, close to the slit and along its direction) vs time. Do this for all three slit-jaw images.
+- Now do a similar thing in the spectra. Make a single Gaussian fit for the Mg II k, Si IV IV and CII lines. Do these fits for a few pixels in the slit, in the umbra. Plot the Gaussian maximum intensity and Doppler shift vs time.
+
+Then you should be able to answer the following questions:
+
+- What is the period of the umbral oscillations? Is it the same in different slit-jaw images and spectral lines?
+- Are the intensity variations happening at the same time in all the lines/images? Or is there a delay (if so, how much?)?
+
+
+Comparing synthetic with IRIS observations
+==========================================
+
+In this project you will analyse spectral data from the simulations and from IRIS observations. You will have download the following IRIS raster:
+
+http://www.lmsal.com/solarsoft/irisa/data/level2_compressed/2015/06/24/20150624_072427_3610091469/iris_l2_20150624_072427_3610091469_raster.tar.gz
+
+(This file is 506 Mb.)
+
+Uncompress the IRIS raster, and then to the following:
+
+- Measure the width of the Mg II k line for all points in the raster, and make a histogram of that
+- Do another histogram for the Mg II maximum intensity.
+- Now to the same for the observations. You should use the file RH_intensity_BIFROST_en024048_hion2_385_Mg_II_10_III_1.fits that was provided with the radiative transfer exercises. Make histograms for width and maximum intensity
+- Compare the results for the simulations and the observations. What do you find?
+
+Some hints and tips:
+
+- To calculate the width of Mg II k you can use the solarsoft routine iris_get_mg_features_lev2 directly on the level 2 raster file, and then set the width as the peak separation (so you subtract the velocity shift of k2r to that of k2v)
+- For the simulations you can use iris_get_mg_features.pro. You will have to load the spectra manually in this case (look in the source code for how to use it).
+- Alternatively, you can also try doing Gaussian fits to the line to calculate width and maximum intensity. Won't be perfect, but at least it will give a rough idea.
+- When doing histograms make sure you get rid of anomalous values (ie, either NaNs/Infs or areas with cosmic rays).
+
+

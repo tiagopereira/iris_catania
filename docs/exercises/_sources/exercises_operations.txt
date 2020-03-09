@@ -1,0 +1,41 @@
+*****************************
+Operations exercise questions
+*****************************
+
+To better answer these questions it is recommended that you download the `IRIS Table Selector Tool <https://www.lmsal.com/iris_science/doc?cmd=dcur&proj_num=IS0299&file_type=tgz>`_. You may need to install the `Java SE JDK <http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html>`_, if it’s not present in your system.
+
+Flare Ribbons
+=============
+
+In this exercise you will need to determine the best IRIS observation programme to study flare ribbons. 
+
+**Goal:**
+
+- I want to study heating of flare ribbons ideally with observations of a C or M class flare
+
+**Targeting constraints:**
+
+
+- Flaring active region not at the limb**Planning steps:**
+
+- Check IRIS data archives for similar observations- Selecting OBS ID
+  - Need low memory usage so it can run for long durations (<0.5 Mbps) in order to catch a flare  - Need both high and low telemetry option (>0.5 Mbps and < 0.5 Mbps) to accommodate variations in available telemetry  - Want reasonable cadence and raster cadence to ensure spectral coverage of changes in the ribbon  - Need to observe Fe XXI line along with strong transition region (C II, Si IV) lines  - Not-too-small field of view
+
+
+Network Jets
+============
+
+In this exercise you will need to determine the best IRIS observation programme to study network jets. 
+
+**Goal:**
+
+- I want to measure temperature, density, velocity, and statistical properties of quiet-sun network jets in order to assess their contribution to coronal heating and the solar wind
+
+**Targeting constraints:**
+
+
+- Quiet sun network or coronal hole between disk center and limb**Planning steps:**
+
+- Check IRIS data archives for similar observations- Selecting OBS ID
+  - Need exposure times of at least 8s, and preferably longer to get good signal-to-noise  - Need moderate memory usage so it can run for at least 4 hours (<1 Mbps)  - Need large field-of-view to get statistics over a large region  - May need summing to get better S/N, but remember the small spatial scales  - Consider multiple flavors: 
+    - A very wide raster to assess statistics in a large region    - A sit-and-stare to maximize cadence (given required exposure times)

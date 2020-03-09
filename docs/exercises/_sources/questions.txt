@@ -1,0 +1,135 @@
+******************
+Exercise questions
+******************
+
+The following list of questions is a test of your knowledge of IRIS.
+
+IRIS and data
+=============
+
+What is the recommended IRIS data level for new users?
+------------------------------------------------------
+
+A. Level 0 data
+B. Level 1 data
+C. Level 2 data
+D. Level 3 data
+
+Which of the following statements is TRUE?
+------------------------------------------
+
+A. Level 2 data is level 1.5 data with cosmic rays removed
+B. For SJIs there is no level 3 data
+C. For spectral rasters, level 3 data cubes have a maximum of three dimensions
+D. Level 1 data are flat-fielded and dark-subtracted
+
+Were there limb observations on the 1st of March 2014?
+------------------------------------------------------
+
+Which of the following statements is TRUE?
+------------------------------------------
+
+A. It is possible to observe simultaneously in the FUV and NUV slit-jaws
+B. The planning for IRIS observations takes place once per week
+C. IRIS level 1 data is only available from the University of Oslo
+D. The eclipse season of IRIS is from November to February
+
+When observing a very large sit and stare with a 10s cadence and exposing the full detectors, how long can you observe until the spacecraft memory fills up (assume it was empty)?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which of the following statements is FALSE?
+-------------------------------------------
+
+A. Observing with a roll angle other than 0 can decrease the telemetry rate
+B. The strongest line in the FUV 1 window is the Si IV 139 nm line
+C. The step size of a dense raster is about 0.35 arcsec
+D. The 283.2 nm slit-jaw image is formed in the chromosphere
+
+Which of the following statements is TRUE?
+------------------------------------------
+
+A. The average data upload rate of IRIS is 0.7 Mbit/s
+B. IRIS has a geosynchronous orbit
+C. The IRIS motors allow it to safely point anywhere in the Sun in just a few seconds
+D. IRIS gets colder when orbiting over Greenland, and this shifts the spectral lines
+
+
+To coordinate observations with IRIS when must one let the planner know the targets?
+------------------------------------------------------------------------------------
+
+A. One hour before the observations
+B. A week before the observations
+C. By 09:00 Pacific Time the day before
+D. By 00:00 UT the day before
+
+IRIS spectral lines
+===================
+
+What is the approximate temperature coverage of the spectral lines observed by IRIS?
+------------------------------------------------------------------------------------
+
+A. 10,000 K to 20,000 K
+B. 5,000 K to 50,000 K
+C. 4,500 K to 10,000,000 K
+D. 10,000 K to 500,000 K
+
+Which of the following statements is FALSE?
+-------------------------------------------
+
+A. The IRIS 279.6 nm SJI is the best channel to align with the AIA coronal channels (17.1, 9.3, 21.1 nm, etc.)
+B. The IRIS 140.0 nm SJI is the best channel to align with the AIA 170.0 nm channel
+C. The IRIS 283.2 nm SJI is the best channel to align with the HMI continuum image
+D. The WCS keywords in the IRIS file headers are obtained by cross correlation of the slit-jaw images with AIA
+
+Which of these lines is formed in higher temperatures?
+------------------------------------------------------
+
+.. figure:: images/fuv_lines.jpg
+
+
+
+Which of the following statements is TRUE?
+------------------------------------------
+
+A. The spectral lines in the NUV window provide velocity diagnostics for several heights from the photosphere to the mid chromosphere
+B. The spectral lines in the FUV 1 window provide temperature diagnostics for several heights from the convective zone to the photosphere
+C. The C II lines at 133.5 nm have a higher signal to noise ratio than the Mg II h and k lines
+D. The Fe XII line is observed only in the quiet sun
+
+
+Which of the following statements is FALSE?
+-------------------------------------------
+
+A. In the umbra of sunspots and very strong active region plage, the Mg II k & h lines have a nearly Gaussian shape
+B. The Mg II h & k lines have an accompanying triplet of lines at 279.16, 279.87, and 279.88 nm
+C. In the average quiet sun the Mg II k2r peak is stronger than the k2v peak
+D. The Mg II k line is stronger than the h line and therefore it is formed in higher layers
+
+
+CRISPEX
+=======
+
+
+What data formats cannot be used with CRISPEX?
+-----------------------------------------------
+
+A. `La Palma` cube format
+B. IRIS level 3 FITS files
+C. Any FITS file
+
+Which of the following statements is TRUE?
+------------------------------------------
+
+A. The ``im`` files contain the images, while the ``sp`` files contain the spectra
+B. The ``sp`` files are a transposed version of the ``im`` files for faster reading
+C. The ``im`` files contain Stokes I, while the ``sp`` files contain Stokes U, Q, V
+D. The ``sp`` files must always be used, while the ``im`` files are optional
+
+
+Which of the following statements is FALSE?
+-------------------------------------------
+
+A. CRISPEX uses the WCS keywords in the IRIS files to calculate the solar (x, y) coordinates
+B. With IRIS files CRISPEX loads the first timestep into memory to calculate scaling factors
+C. The y scale of the detailed spectrum window can be adjusted in the `Displays` tab
+D. The maximum animation speed is 10 frames per second

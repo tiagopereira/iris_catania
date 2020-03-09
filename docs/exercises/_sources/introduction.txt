@@ -1,0 +1,10 @@
+************
+Introduction
+************
+
+These exercises and tutorials were prepared for the IRIS Workshop taking place in Catania in April 2016. They cover the author's tutorial on IRIS data analysis.
+
+The answers to most of these questions will be found in the IRIS documentation or the provided slides. Some of the questions will also require the user to search in the IRIS webpage, examine some of the data files, and run some IDL commands. For these it is assumed that the user has access to a machine with IDL and the solarsoft package installed (with the IRIS branch). 
+
+The tutorials are meant to be a guided starting point to data exploration and analysis with IRIS. They provide lists and descriptions of a few basic tasks, and the users and encouraged to explore further and advance from them.
+
